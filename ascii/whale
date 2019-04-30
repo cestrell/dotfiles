@@ -1,0 +1,18 @@
+## DEFINE COLORS
+# Don't change
+bc="$(tput bold)"	# bold
+c4="$(tput setaf 4)"	# blue
+c7="$(tput setaf 7)"	# white
+rc="$(tput sgr0)"	# reset
+#
+# You can change these
+fc="${rc}${c4}${bc}"	# first color
+sc="${rc}${bc}${c7}"	# second color
+#
+## OUTPUT
+echo "${fc}        .-'		"
+echo "${fc}    '--./ /     _.---.	"
+echo "${fc}    '-,  (__..-'       \	"
+echo "${fc}       \          ${sc}.${fc}     |"
+echo "${fc}        ',.__.   ,__.--/	"
+echo "${sc}          '._${sc}/_.'${sc}___.-'"
