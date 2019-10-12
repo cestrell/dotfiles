@@ -7,3 +7,8 @@ Contains shortcuts, tweaks, scripts, and settings that configure many aspects of
 
 Useful for faster workflow setup and restoration when needed.
 
+
+# Vim
+## Colorscheme
+[One Dark](https://github.com/joshdick/onedark.vim)
+
