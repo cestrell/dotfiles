@@ -1,3 +1,5 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+
 # Dotfiles
 Collection of text-based configuration files and directories with a . prepended to their name.
 
