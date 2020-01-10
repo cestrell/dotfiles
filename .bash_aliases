@@ -20,8 +20,7 @@ alias sa='source ~/.bash_aliases'   # source .bash_aliases
 alias sb='source ~/.bashrc'			    # source .bashrc
 
 # EZ config for dotfiles from anywhere
-alias config='git-dir ~/dotfiles'
-#alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 # Version Control
 alias gita='git add'
