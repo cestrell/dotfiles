@@ -7,7 +7,11 @@ Contains shortcuts, tweaks, scripts, and settings that configure many aspects of
 
 Useful for faster workflow setup and restoration when needed.
 
-
+## Setup
+```
+git clone --bare <git-repo-url> $HOME/.cfg
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+```
 ### Vim Colorscheme
 [One Dark](https://github.com/joshdick/onedark.vim)
 
