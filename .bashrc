@@ -1,27 +1,22 @@
-######################
-### BASH FUNCTIONS ###
-######################
+##############
+### BASHRC ###
+##############
 
-# ~/.bashrc: executed by bash(1) for non-login shells.
+PS1="\[$(tput bold)\]\[\033[38;5;81m\][\w]\$ \[$(tput sgr0)\]"	# User Shell Prompt
 
-[ -z "$PS1" ] && return # If not running interactively, don't do anything
-
-# Set User Prompt
-PS1="\[$(tput bold)\]\[\033[38;5;81m\][\w]\$ \[$(tput sgr0)\]"
-
-# Terminal Properties
-HISTSIZE=5000						# Set history length 
-HISTFILESIZE=5000					#
+HISTSIZE=5000							# Set history length 
+HISTFILESIZE=5000						#
 HISTIGNORE='ls:pwd:mkdir:cd:c:la:eb:sb' # Commands for history file to ignore
-PROMPT_DIRTRIM=3					#
+PROMPT_DIRTRIM=3						# Trim prompt to 3 subdirectories
 
-shopt -s autocd						# 
-shopt -s checkwinsize				# check window size after commands
-shopt -s extglob					#
-shopt -s histappend					# append to history file, don't overwrite it
+shopt -s autocd							# cd to directory only using name
+shopt -s checkwinsize					# Check window size after commands
+shopt -s extglob						# 
+shopt -s histappend						# Append to history file, don't overwrite it
 
-# make less more friendly for non-text input files, see lesspipe(1)
-[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
+
+[ -z "$PS1" ] && return											# If not running interactively, don't do anything
+[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"	# Make 'less' more friendly for non-text input files, see lesspipe(1)
 
 # Import aliases and functions
 if [ -f ~/.bash_aliases ]; then
@@ -33,8 +28,9 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
+
 # Quickly append alias
-function quickalias () {
+function quickalias() {
 	echo "alias $1='$2'" >> ~/.bash_aliases
 }
 
@@ -54,7 +50,6 @@ function git-dir() {
 
 # Quickly jump to class projects
 function p {
-	home				# Jump to desktop
-	cd $1/project$2		# Directory(1) with 'project' subdirectory(2)
-
+	home				# Jump to desktop using alias
+	cd $1				# Jump to given project directory
 }
