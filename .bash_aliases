@@ -20,7 +20,7 @@ alias sa='source ~/.bash_aliases'   # source .bash_aliases
 alias sb='source ~/.bashrc'			    # source .bashrc
 
 # EZ config for dotfiles from anywhere
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias config='git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 # Version Control
 alias gita='git add'
@@ -31,11 +31,12 @@ alias gits='git status'
 alias gitpsuo='git push --set-upstream origin'
 
 # Misc
+alias ppath='echo $PATH | tr ":" "\n" | nl' 
 alias dos2unix='dos2unix -u'
 alias downloadgitignore='wget https://eecs280staff.github.io/p1-stats/dot_gitignore_sample -O .gitignore'
 alias exp='explorer.exe'
 alias findhere='find . -name'
 alias histgrep='history | cut -c 7- | sort -u | grep'
-alias home='cd ~/../../mnt/c/Users/User/Desktop' # Jump to desktop
+alias home='cd ~/../../mnt/c/Users/Administrator/Desktop' # Jump to desktop
 alias myip='curl http://ipecho.net/plain; echo'  # Print IP
 alias newtheos='$THEOS/bin/nic.pl'				 # Create new Theos project 
