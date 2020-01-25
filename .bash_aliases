@@ -9,9 +9,8 @@ alias v='vim'
 alias la='ls -FA'
 alias ls='ls -F'
 alias ll='ls -Fl'
+alias lla='ll -a'
 alias lst='ls | tr " " \n\t'
-alias lsl='ls -l'
-alias lsa='ls -a'
 
 # Dotfile Editing
 alias ea='vi ~/.bash_aliases'		    # edit .bash_aliases
@@ -29,10 +28,11 @@ alias gitm='git commit -m'
 alias gitp='git push'
 alias gits='git status'
 alias gitpsuo='git push --set-upstream origin'
+alias gbranch='git symbolic-ref --short HEAD'
 
 # Misc
 alias ppath='echo $PATH | tr ":" "\n" | nl' 
-alias dos2unix='dos2unix -u'
+alias dos2unix='dos2unix -u' #fromdos #sed -ri 's/\r$//' 
 alias downloadgitignore='wget https://eecs280staff.github.io/p1-stats/dot_gitignore_sample -O .gitignore'
 alias exp='explorer.exe'
 alias findhere='find . -name'
