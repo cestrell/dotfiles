@@ -1,38 +1,42 @@
-colorscheme onedark
-inoremap <C-v> <F10><C-r>+<F10>
-syntax on				" Enable syntax highlighting
-vnoremap <C-c> "+y
-"autocmd vimenter * NERDTree
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+colorscheme onedark				" Set colorscheme
+syntax on						" Enable syntax highlighting
 
-set autoindent			" Enable auto indentation
+
+set nocompatible				" Required (?)
+set clipboard=unnamedplus		" Use system clipboard
+set autoindent					" Enable auto indentation
 set backspace=indent,eol,start	" Make backspace behave 
-set clipboard+=unnamedplus
-set cursorline			" Highlight current line
-set hlsearch			" Highlight matches
-set ignorecase			" Case insensitive search
-set incsearch			" Search as characters are entered
+set cursorline					" Highlight current line
+set hlsearch					" Highlight matches in search
+set ignorecase					" Case insensitive search
+set incsearch					" Search as characters are entered
 set infercase
-set mouse=a				" Enable mouse in all modes
-set nobackup noswapfile
-set nowrap				" Don't wrap text
-set number				" Show line numbers
+set mouse=a						" Enable mouse in all modes
+set nobackup noswapfile			" Don't create backup or swap files
+set nowrap						" Don't wrap text
+set number						" Show line numbers
+set relativenumber				" Know how many lines selected
 set pastetoggle=<F10>
-set ruler				" Always show info along bottom
-set showcmd				" Show command in bottom bar 
-set showmatch
-set smartcase
-set softtabstop=4
-set tabstop=4 shiftwidth=4 noexpandtab
-set undofile			" Maintain undo history between sessions
-set undodir=~/.vim/undo
-set visualbell noerrorbells
-" lazy file name tab completion
-set wildmode=longest,list,full		
-set wildmenu			" Visual autocomplete for command menu
-set wildignorecase
+set ruler						" Always show info along bottom
+set showcmd						" Show command in bottom bar 
+set showmatch					" Highlight matching braces
+set smartcase					" Case insensitive search
+set softtabstop=4 tabstop=4 	" Tab styling
+set splitbelow splitright		" More natural splitting
+set shiftwidth=4 noexpandtab	" More tab styling
+set undofile					" Maintain undo history between sessions
+set undodir=~/.vim/undo			" Set undo file directory
+set visualbell noerrorbells		" No annoying dings
+set wildmode=longest,list,full	" Lazy file name tab completion
+set wildmenu					" Visual autocomplete for command menu
+set wildignorecase				" Case insensitive command menu
 
-" ignore files vim doesnt use
+" Netrw settings
+let g:netrw_liststyle = 3
+let g:netrw_browse_split = 1
+let g:netrw_winsize = 25
+
+" Ignore files vim doesnt use
 set wildignore+=.git,.hg,.svn
 set wildignore+=*.aux,*.out,*.toc
 set wildignore+=*.o,*.obj,*.exe,*.dll,*.manifest,*.rbc,*.class
@@ -44,4 +48,3 @@ set wildignore+=*.doc,*.pdf,*.cbr,*.cbz
 set wildignore+=*.zip,*.tar.gz,*.tar.bz2,*.rar,*.tar.xz,*.kgb
 set wildignore+=*.swp,.lock,.DS_Store,._*
 
-set wildmenu
