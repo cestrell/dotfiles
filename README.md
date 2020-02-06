@@ -9,10 +9,21 @@ Useful for faster workflow setup and restoration when needed.
 
 ## Setup
 ```
+# Initial repo creation
 git clone --bare <git-repo-url> $HOME/.cfg
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 ```
 
-### Vim Colorscheme
+```
+# Create an alias for easy management
+alias cfg='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+```
+
+## Vim+
+
+### Colorscheme
 [One Dark](https://github.com/joshdick/onedark.vim)
 
+### Extra Configuration
+'''
+apt install vim-gui-common
+'''
