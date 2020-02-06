@@ -1,7 +1,10 @@
 .ssh/known_hosts
 .cfg
-.vscode-sever/*
+.vscode-server/*
 .stack/*
-*._history
+.*_history
 .cache/*
 .java/*
+.m2/*
+.local/*
+.pylint*
