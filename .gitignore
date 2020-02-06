@@ -1,7 +1,7 @@
 .ssh/known_hosts
 .cfg
-.vscode-sever/
-.stack/
+.vscode-sever/*
+.stack/*
 *._history
-.cache/
-.java/
+.cache/*
+.java/*

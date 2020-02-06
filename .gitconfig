@@ -2,9 +2,17 @@
 [user]
 	name = cestrell
 	email = cestrell@umich.edu
-
 [color]
 	ui = true
-
+	status = always
 [core]
 	editor = vim
+[alias]
+	s = status
+	a = add
+	c = commit
+	cm = commit -m
+	d = diff
+	p = push
+	psuo = push -u origin
+	adog = log --all --decorate --oneline --graph
