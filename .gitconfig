@@ -2,17 +2,23 @@
 [user]
 	name = cestrell
 	email = cestrell@umich.edu
+
 [color]
 	ui = true
 	status = always
+
 [core]
 	editor = vim
+
 [alias]
-	s = status
 	a = add
+	b = branch
+	bs = git symbolic-ref --short HEAD
 	c = commit
 	cm = commit -m
 	d = diff
-	p = push
+	ps = push
+	pl = pull
 	psuo = push -u origin
+	s = status
 	adog = log --all --decorate --oneline --graph
