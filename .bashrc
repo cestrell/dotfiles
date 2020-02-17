@@ -22,7 +22,8 @@ shopt -s checkwinsize					# Check window size after commands
 shopt -s extglob						# 
 shopt -s histappend						# Append to history file, don't overwrite it
 
-
+export DESKTOP='/../mnt/c/Users/Administrator/Desktop/'
+export PROJECTS='/../mnt/c/Users/Administrator/Desktop/MyProjects/'
 
 # Quickly append alias
 function quickalias() {
