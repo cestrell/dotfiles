@@ -21,4 +21,4 @@
 	pl = pull
 	psuo = push -u origin
 	s = status
-	adog = log --all --decorate --oneline --graph
+	clog = log --all --decorate --oneline --graph
