@@ -5,20 +5,18 @@ syntax on						" Enable syntax highlighting
 set nocompatible				" Required (?)
 set clipboard=unnamedplus		" Use system clipboard
 set autoindent					" Enable auto indentation
-set backspace=indent,eol,start	" Make backspace behave 
+set backspace=indent,eol,start	" Make backspace behave
 set cursorline					" Highlight current line
 set hlsearch					" Highlight matches in search
 set ignorecase					" Case insensitive search
 set incsearch					" Search as characters are entered
 set infercase
-set mouse=a						" Enable mouse in all modes
 set nobackup noswapfile			" Don't create backup or swap files
 set nowrap						" Don't wrap text
 set number						" Show line numbers
 set relativenumber				" Know how many lines selected
-set pastetoggle=<F10>
 set ruler						" Always show info along bottom
-set showcmd						" Show command in bottom bar 
+set showcmd						" Show command in bottom bar
 set showmatch					" Highlight matching braces
 set smartcase					" Case insensitive search
 set softtabstop=4 tabstop=4 	" Tab styling
