@@ -7,30 +7,31 @@ Useful for faster workflow setup and restoration when needed.
 
 ## Setup
 
-Initial repo creation
+Initial repo creation.
 ```
 git clone --bare <git-repo-url> $HOME/.cfg
-# Or 
+# Or
 git clone --bare https://github.com/cestrell/Dotfiles/ $HOME/.cfg
 ```
 
-Create an alias for easy management
+Create an alias for easy management.
 ```
-alias cfg='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME' 
+alias cfg='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 ```
 
-Hide untracked files 
+Hide untracked files.
 ```
 cfg config --local status.showUntrackedFiles no
 ```
 
-Don't create weird recursion problems
+Don't create weird recursion problems.
 ```
-echo ".cfg" >> ~/.gitignore 
+echo ".cfg" >> ~/.gitignore
 ```
 
-Checkout content to your $HOME
-NOTE: Backup (or delete, if unneeded) existing content if conflicts occur
+Checkout content to your $HOME.
+
+NOTE: Backup (or delete, if unneeded) existing content if conflicts occur.
 
 ```
 cfg checkout
@@ -39,15 +40,15 @@ cfg checkout
 ## Additional Config
 
 ### Windows X Server
+Some GUI applications will not work without an X-Server.
+
 [vcXsrv](https://sourceforge.net/projects/vcxsrv/)
 
 ### Vim+
-Colorscheme
-[One Dark](https://github.com/joshdick/onedark.vim)
+Colorscheme: [One Dark](https://github.com/joshdick/onedark.vim)
 
-### Extra Configuration
+If vim :version is 'Small version without GUI'
 ```
-# If :version is 'Small version without GUI'
 apt-get install vim-gui-common
 apt-get install vim-runtime
 ```
