@@ -2,8 +2,11 @@
 ### BASHRC ###
 ##############
 
-[ -z "$PS1" ] && return											# If not running interactively, don't do anything
-[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"	# Make 'less' more friendly for non-text input files, see lesspipe(1)
+# If not running interactively, don't do anything
+[ -z "$PS1" ] && return
+
+# Make 'less' more friendly for non-text input files, see lesspipe(1)
+[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
 # Enable programmable completion
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
@@ -12,25 +15,26 @@ fi
 
 PS1="\[$(tput bold)\]\[\033[38;5;81m\][\w]\$ \[$(tput sgr0)\]"	# User Shell Prompt
 
-HISTSIZE=5000							# Set history length 
+HISTSIZE=5000							# Set history length
 HISTFILESIZE=5000						#
 HISTIGNORE='ls:pwd:mkdir:cd:c:la:eb:sb' # Commands for history file to ignore
 PROMPT_DIRTRIM=3						# Trim prompt to 3 subdirectories
 
 shopt -s autocd							# cd to directory only using name
 shopt -s checkwinsize					# Check window size after commands
-shopt -s extglob						# 
+shopt -s extglob						#
 shopt -s histappend						# Append to history file, don't overwrite it
 
 export DESKTOP='/../mnt/c/Users/Administrator/Desktop/'
-export PROJECTS='/../mnt/c/Users/Administrator/Desktop/MyProjects/'
+export PROJECTS='/../mnt/c/Users/Administrator/Desktop/Projects/'
+export DISPLAY=:0
 
 # Quickly append alias
 function quickalias() {
 	echo "alias $1='$2'" >> ~/.bash_aliases
 }
 
-# rsync all files in current directory to CAEN (school computer network)
+# rsync all files in current directory to CAEN
 function cr() {
 	DIR=$1
 	shift
