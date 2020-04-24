@@ -37,11 +37,10 @@ NOTE: Backup (or delete, if unneeded) existing content if conflicts occur.
 cfg checkout
 ```
 
-## Additional Config
+## Additional Resources
 
 ### Windows X Server
-Some GUI applications will not work without an X-Server.
-
+Some GUI applications will not work on WSL without an X-Server.
 [vcXsrv](https://sourceforge.net/projects/vcxsrv/)
 
 ### Vim+
@@ -51,4 +50,16 @@ If vim :version is 'Small version without GUI'
 ```
 apt-get install vim-gui-common
 apt-get install vim-runtime
+
+apt-get install vim-gnome
 ```
+
+### sudoers.lecture
+[SUDOwoodo](https://github.com/0aax/sudowoodo)
+
+### PEDA for GDB
+[PEDA](https://github.com/longld/peda)
+
+### rockyou.txt
+[Download](https://github.com/brannondorsey/naive-hashcat/releases/download/data/rockyou.txt)
+
