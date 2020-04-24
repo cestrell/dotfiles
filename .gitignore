@@ -13,3 +13,5 @@
 .local/*
 .pylint*
 .npm/*
+.mozilla/*
+src/*
