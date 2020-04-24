@@ -1,6 +1,9 @@
+"""""""""""""
+""" VIMRC """
+"""""""""""""
+
 colorscheme onedark				" Set colorscheme
 syntax on						" Enable syntax highlighting
-
 
 set nocompatible				" Required (?)
 set clipboard=unnamedplus		" Use system clipboard
@@ -10,7 +13,7 @@ set cursorline					" Highlight current line
 set hlsearch					" Highlight matches in search
 set ignorecase					" Case insensitive search
 set incsearch					" Search as characters are entered
-set infercase
+set infercase                   " TODO
 set nobackup noswapfile			" Don't create backup or swap files
 set nowrap						" Don't wrap text
 set number						" Show line numbers
@@ -29,6 +32,7 @@ set wildmode=longest,list,full	" Lazy file name tab completion
 set wildmenu					" Visual autocomplete for command menu
 set wildignorecase				" Case insensitive command menu
 
+
 " Netrw settings
 let g:netrw_liststyle = 3
 let g:netrw_browse_split = 1
@@ -45,4 +49,3 @@ set wildignore+=*.eot,*.otf,*.ttf,*.woff
 set wildignore+=*.doc,*.pdf,*.cbr,*.cbz
 set wildignore+=*.zip,*.tar.gz,*.tar.bz2,*.rar,*.tar.xz,*.kgb
 set wildignore+=*.swp,.lock,.DS_Store,._*
-

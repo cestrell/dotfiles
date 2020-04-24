@@ -1,2 +1,6 @@
+################
+### SQLITERC ###
+################
+
 .mode column
 .header on
