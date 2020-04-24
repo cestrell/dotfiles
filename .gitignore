@@ -1,3 +1,7 @@
+#####################
+### CFG GITIGNORE ###
+#####################
+
 .ssh/known_hosts
 .cfg
 .vscode-server/*

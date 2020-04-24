@@ -1,14 +1,26 @@
-# This is Git's per-user configuration file.
+#################
+### GITCONFIG ###
+#################
+
 [user]
-	name = cestrell
+	name = Carlos Estrella
 	email = cestrell@umich.edu
 
 [color]
 	ui = true
-	status = always
+	diff = auto
+	branch = auto
+	status = auto
 
 [core]
 	editor = vim
+	#excludesfile = ~/.gitignore_global
+
+[credential]
+	helper = cache
+
+[github]
+	user = cestrell
 
 [alias]
 	a = add
@@ -20,5 +32,7 @@
 	ps = push
 	pl = pull
 	psuo = push -u origin
+	r = rebase
 	s = status
+	st = stash
 	clog = log --all --decorate --oneline --graph
