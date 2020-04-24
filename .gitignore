@@ -3,7 +3,7 @@
 #####################
 
 .ssh/known_hosts
-.cfg
+.cfg/*
 .vscode-server/*
 .stack/*
 .*_history
@@ -12,3 +12,4 @@
 .m2/*
 .local/*
 .pylint*
+.npm/*
