@@ -8,27 +8,17 @@
 #    ~/.profile
 # and only executes the first one it finds.
 
-
 # Load dotfiles
-if [ -f ~/.git_completion ]; then
-    source ~/.git_completion
-fi 
-
-if [ -f ~/.bash_functions ]; then
-    source ~/.bash_functions
-    set_SSH_agent
-fi 
-
-if [ -f ~/.bashrc ]; then
-	source ~/.bashrc
-fi
-
-if [ -f ~/.bash_aliases ]; then
-    source ~/.bash_aliases
-fi 
-
+if [ -f ~/.dir_colors ]; then eval `dircolors -b ~/.dir_colors`; fi
+if [ -f ~/.git_completion ]; then source ~/.git_completion; fi
+if [ -f ~/.bash_aliases ]; then source ~/.bash_aliases; fi
+if [ -f ~/.bash_functions ]; then source ~/.bash_functions; fi
+if [ -f ~/.bashrc ]; then source ~/.bashrc; fi
 
 # Enable programmable completion
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
-    . /etc/bash_completion
+    source /etc/bash_completion
 fi
+
+# Surprise
+~/ascii/$(ls ~/ascii | shuf -n 1)
