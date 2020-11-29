@@ -31,7 +31,7 @@ cfg checkout
 
 ## Additional Resources
 
-#### Vim++
+### Vim++
 Colorscheme: [One Dark](https://github.com/joshdick/onedark.vim)
 
 If `vim :version` == 'Small version without GUI'
@@ -41,20 +41,23 @@ apt-get install vim-runtime
 
 apt-get install vim-gnome
 ```
+### ZSH
 
-#### Windows X Server
+https://github.com/ohmyzsh/ohmyzsh#basic-installation
+
+### Windows X Server
 Some GUI applications will not work on WSL without an X-Server.
 [vcXsrv](https://sourceforge.net/projects/vcxsrv/)
 
-#### SUDOwoodo
+### SUDOwoodo
 ASCII sudowoodo for sudoers.lecture
 [SUDOwoodo](https://github.com/0aax/sudowoodo)
 
-#### PEDA for GDB
+### PEDA for GDB
 Python Exploit Development Assistance for GDB. Enhance GDG GUI for ez debugging and exploit development.
 [PEDA](https://github.com/longld/peda)
 
-#### rockyou.txt
+### rockyou.txt
 Common words dictionary useful for password cracking
 [Download](https://github.com/brannondorsey/naive-hashcat/releases/download/data/rockyou.txt)
 
