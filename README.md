@@ -10,30 +10,25 @@ Useful for faster workflow setup and restoration when needed.
 Initial repo creation.
 ```
 git clone --bare <git-repo-url> $HOME/.cfg
-# Or
+```
+or
+```
 git clone --bare https://github.com/cestrell/Dotfiles/ $HOME/.cfg
 ```
 
-Create an alias for easy management.
+1. Create an alias for easy management.
+2. Hide untracked files using newly created alias.
+3. Avoid weird recursion problems.
+4. Checkout content to your $HOME.
+
+NOTE: Backup (or delete) existing content if conflicts occur.
 ```
 alias cfg='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-```
 
-Hide untracked files.
-```
 cfg config --local status.showUntrackedFiles no
-```
 
-Don't create weird recursion problems.
-```
 echo ".cfg" >> ~/.gitignore
-```
 
-Checkout content to your $HOME.
-
-NOTE: Backup (or delete, if unneeded) existing content if conflicts occur.
-
-```
 cfg checkout
 ```
 
@@ -43,10 +38,10 @@ cfg checkout
 Some GUI applications will not work on WSL without an X-Server.
 [vcXsrv](https://sourceforge.net/projects/vcxsrv/)
 
-### Vim+
+### Vim++
 Colorscheme: [One Dark](https://github.com/joshdick/onedark.vim)
 
-If vim :version is 'Small version without GUI'
+If `vim :version` == 'Small version without GUI'
 ```
 apt-get install vim-gui-common
 apt-get install vim-runtime
@@ -54,7 +49,7 @@ apt-get install vim-runtime
 apt-get install vim-gnome
 ```
 
-### sudoers.lecture
+### SUDOwoodo sudoers.lecture
 [SUDOwoodo](https://github.com/0aax/sudowoodo)
 
 ### PEDA for GDB
