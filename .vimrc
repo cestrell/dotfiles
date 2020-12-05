@@ -2,7 +2,7 @@
 """ VIMRC """
 """""""""""""
 
-colorscheme onedark				" Set colorscheme
+" colorscheme onedark				" Set colorscheme
 syntax on						" Enable syntax highlighting
 
 set nocompatible				" Required (?)
