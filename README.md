@@ -47,17 +47,28 @@ https://github.com/ohmyzsh/ohmyzsh#basic-installation
 
 ### Windows X Server
 Some GUI applications will not work on WSL without an X-Server.
+
 [vcXsrv](https://sourceforge.net/projects/vcxsrv/)
 
-### SUDOwoodo
-ASCII sudowoodo for /etc/sudoers.d/sudoers.lecture
+### SUDO
+
+- ASCII Sudowoodo for /etc/sudoers.d/sudoers.lecture
+
 [SUDOwoodo](https://github.com/0aax/sudowoodo)
+
+-ASCII groot
+```
+curl -O https://caferock.org/chris/groot.txt groot
+sudo cp groot.txt /etc/sudoers.d/sudoers.lecture
+```
 
 ### PEDA for GDB
 Python Exploit Development Assistance for GDB. Enhance GDG GUI for ez debugging and exploit development.
+
 [PEDA](https://github.com/longld/peda)
 
 ### rockyou.txt
 Common words dictionary useful for password cracking
+
 [Download](https://github.com/brannondorsey/naive-hashcat/releases/download/data/rockyou.txt)
 
