@@ -50,7 +50,7 @@ Some GUI applications will not work on WSL without an X-Server.
 [vcXsrv](https://sourceforge.net/projects/vcxsrv/)
 
 ### SUDOwoodo
-ASCII sudowoodo for sudoers.lecture
+ASCII sudowoodo for /etc/sudoers.d/sudoers.lecture
 [SUDOwoodo](https://github.com/0aax/sudowoodo)
 
 ### PEDA for GDB
