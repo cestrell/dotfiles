@@ -5,14 +5,35 @@
 # Readline: library that provides line-editing for interactive programs 
 # with a command-line interface, such as Bash.
 
-set bell-style none                 # No annoying bell
-set colored-stats on                # TODO
-set echo-control-characters off     # TODO
-set show-all-if-ambiguous on        # Show option list with TAB
-set completion-ignore-case on       # Case insensitivity
-set visible-stats on                # Append filetype info to lists
-set match-hidden-files off          # Do not tab-complete hidden files
-set blink-matching-paren on         # TODO
-set enable-bracketed-paste on       # TODO
-set completion-map-case on          # TODO
-set skip-completed-text on          # TODO
+# No annoying bell
+set bell-style none
+
+# TODO
+set colored-stats on
+
+# TODO
+set echo-control-characters off
+
+# Show option list with TAB
+set show-all-if-ambiguous on
+
+# Case insensitivity for tab completion
+set completion-ignore-case on
+
+# Append filetype info to lists
+set visible-stats on
+
+# Tab-complete hidden files
+set match-hidden-files on
+
+# Highlight matching parentheses
+set blink-matching-paren on
+
+# TODO
+set enable-bracketed-paste on
+
+# TODO
+set completion-map-case on
+
+# TODO
+set skip-completed-text on
