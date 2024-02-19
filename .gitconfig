@@ -19,7 +19,6 @@
 
 # Um
 [credential]
-	helper = store
 
 [github]
 	user = cestrell
