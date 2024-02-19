@@ -35,8 +35,15 @@ export ASCII="$HOME/ascii"
 export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
 export GO="/usr/local/go/bin:/$HOME/go/bin"
 export VBOX="/mnt/c/Programs\ Files/Oracle/VirtualBox"
+export LOCALBIN="$HOME/.local/bin"
 
-export PATH="$PATH:$GO:$JAVA_HOME:$ASCII:$CARGO:$THEOS:$VBOX"
+for DIRPATH in $THEOS $CARGO $ASCII $JAVA_HOME $GO $VBOX $LOCALBIN
+do	
+	if [ -d "$DIRPATH" ] ; then 
+		export PATH="$PATH:$DIRPATH"
+		echo "Added" $DIRPATH
+	fi
+done	
 
 # WSL DISPLAY CONFIGURATION
 export WSL_HOST=$(tail -1 /etc/resolv.conf | cut -d' ' -f2)
