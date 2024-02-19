@@ -19,7 +19,7 @@
 
 # Um
 [credential]
-	helper = wincred
+	helper = store
 
 [github]
 	user = cestrell
