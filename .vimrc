@@ -1,8 +1,8 @@
 """""""""""""
-""" VIMRC """
+""" VIMRC""""
 """""""""""""
 
-" colorscheme onedark				" Set colorscheme
+colorscheme industry			" Set colorscheme
 syntax on						" Enable syntax highlighting
 
 set nocompatible				" Required (?)
@@ -13,15 +13,15 @@ set cursorline					" Highlight current line
 set hlsearch					" Highlight matches in search
 set ignorecase					" Case insensitive search
 set incsearch					" Search as characters are entered
-set infercase                   " TODO
+set infercase                   " Infer case during completion
 set nobackup noswapfile			" Don't create backup or swap files
 set nowrap						" Don't wrap text
 set number						" Show line numbers
-set relativenumber				" Know how many lines selected
+"set relativenumber				" Show distance from current line
 set ruler						" Always show info along bottom
 set showcmd						" Show command in bottom bar
 set showmatch					" Highlight matching braces
-set smartcase					" Case insensitive search
+set smartcase					" Override ignorecase on mixed-case patterns
 set softtabstop=4 tabstop=4 	" Tab styling
 set splitbelow splitright		" More natural splitting
 set shiftwidth=4 noexpandtab	" More tab styling
