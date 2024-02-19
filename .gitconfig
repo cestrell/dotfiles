@@ -17,8 +17,9 @@
 	symlinks = true
 	#excludesfile = ~/.gitignore_global
 
+# Um
 [credential]
-	helper = cache
+	helper = /mnt/c/Program\\ Files/Git/mingw64/bin/git-credential-manager.exe
 
 [github]
 	user = cestrell
