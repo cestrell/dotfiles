@@ -16,7 +16,7 @@ git clone --bare https://github.com/cestrell/Dotfiles/ $HOME/.cfg
 
 Create a link between dotfiles and alias to edit & update git repo from any folder:
 1. Create an alias for easy management.
-2. Hide untracked files using newly created alias.
+2. Hide untracked files using newly created alias.(they bother me)
 3. Avoid weird git recursion problems by ignoring dotfiles folder.
 4. Checkout content to $HOME.
 
