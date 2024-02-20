@@ -52,8 +52,11 @@ curl https://caferock.org/chris/groot.txt -o groot
 sudo cp groot.txt /etc/sudoers.d/sudoers.lecture
 ```
 
-### POKEMON COLORSCRIPTS
+### POKEMON IN CMD
 [pokemon-colorscripts](https://gitlab.com/phoneybadger/pokemon-colorscripts): Print pokemon to terminal
+
+### TERMINAL BONSAI
+[cbonsai]( https://gitlab.com/jallbrit/cbonsai) Grow your own bonsai tree
 
 ### WINDOWS X SERVER
 [vcXsrv](https://sourceforge.net/projects/vcxsrv/): Some GUI applications will not work on WSL without an X-Server.
