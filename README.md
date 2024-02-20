@@ -29,7 +29,7 @@ cfg checkout
 ---
 # Additional Resources
 
-### Vim++
+## VIM++
 Colorscheme: [One Dark](https://github.com/joshdick/onedark.vim)
 
 Check if `vim :version` == 'Small version without GUI' and update if needed
@@ -38,7 +38,7 @@ apt-get install vim-gui-common
 apt-get install vim-runtime
 ```
 
-### SUDO LECTURE BUDDIES
+## SUDO LECTURE BUDDIES
 #### Custom messages for /etc/sudoers.d/sudoers.lecture
 
 ASCII [SUDOwoodo](https://github.com/0aax/sudowoodo):
@@ -52,15 +52,18 @@ curl https://caferock.org/chris/groot.txt -o groot
 sudo cp groot.txt /etc/sudoers.d/sudoers.lecture
 ```
 
-### Windows X Server
+## POKEMON COLORSCRIPTS
+[pokemon-colorscripts](https://gitlab.com/phoneybadger/pokemon-colorscripts): Print pokemon to terminal
+
+## WINDOWS X SERVER
 [vcXsrv](https://sourceforge.net/projects/vcxsrv/): Some GUI applications will not work on WSL without an X-Server.
 
-### PEDA for GDB
+### PEDA FOR GDB
 [PEDA](https://github.com/longld/peda): Python Exploit Development Assistance for GDB. Enhance GDG GUI for ez debugging and exploit development.
 
 ### ZSH
 [ZSH Installation](https://github.com/ohmyzsh/ohmyzsh#basic-installation)
 
-### rockyou.txt for pwds
-[Download](https://github.com/brannondorsey/naive-hashcat/releases/download/data/rockyou.txt): Common words dictionary useful for password cracking
+### MISC.
+[rockyou.txt](https://github.com/brannondorsey/naive-hashcat/releases/download/data/rockyou.txt): Common words dictionary useful for password cracking
 
