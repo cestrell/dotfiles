@@ -29,7 +29,7 @@ cfg checkout
 ---
 # Additional Resources
 
-## VIM++
+### VIM++
 Colorscheme: [One Dark](https://github.com/joshdick/onedark.vim)
 
 Check if `vim :version` == 'Small version without GUI' and update if needed
@@ -38,7 +38,7 @@ apt-get install vim-gui-common
 apt-get install vim-runtime
 ```
 
-## SUDO LECTURE BUDDIES
+### SUDO LECTURE BUDDIES
 #### Custom messages for /etc/sudoers.d/sudoers.lecture
 
 ASCII [SUDOwoodo](https://github.com/0aax/sudowoodo):
@@ -52,10 +52,10 @@ curl https://caferock.org/chris/groot.txt -o groot
 sudo cp groot.txt /etc/sudoers.d/sudoers.lecture
 ```
 
-## POKEMON COLORSCRIPTS
+### POKEMON COLORSCRIPTS
 [pokemon-colorscripts](https://gitlab.com/phoneybadger/pokemon-colorscripts): Print pokemon to terminal
 
-## WINDOWS X SERVER
+### WINDOWS X SERVER
 [vcXsrv](https://sourceforge.net/projects/vcxsrv/): Some GUI applications will not work on WSL without an X-Server.
 
 ### PEDA FOR GDB
