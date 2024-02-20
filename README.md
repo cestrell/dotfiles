@@ -1,6 +1,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-# Dotfiles
+# dotfiles
 Shortcuts, tweaks, scripts, and settings that configure system.
 
 Useful for faster workflow setup and restoration when needed.
