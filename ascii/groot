@@ -1,0 +1,24 @@
+#!/bin/bash
+
+r="\e[00;31m"
+g="\e[00;32m"
+br="\e[00;33m"
+bl="\e[01;34m"
+w="\e[01;37m"
+
+read -r -d '' groot << EOM
+
+     $g       \^V//
+     $br  |$w. .$br|   $bl I AM (G)ROOT!
+     $g- $br\ - /$g _
+     $br \_| |_/
+     $br   \ \\
+     $r \e___$br/$r\e__$br/$r\e___
+     $r|_______|  $w With great power comes great responsibility.
+     $r \     /   $w Use sudo wisely.
+     $r  \___/
+
+
+EOM
+
+printf "\n%b\n\n" "$groot"
