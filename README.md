@@ -7,16 +7,14 @@ Useful for faster workflow setup and restoration when needed.
 
 ## Setup
 
-### NOTE: Backup existing content BEFORE setup.
+### NOTE: Backup existing dotfiles BEFORE setup.
 
-Initial repo creation.
+Initial repo creation:
 ```
-git clone --bare <git-repo-url> $HOME/.cfg
-# OR
 git clone --bare https://github.com/cestrell/Dotfiles/ $HOME/.cfg
 ```
 
-Link dotfiles to an alias to edit & update from any folder. 
+Create a link between dotfiles and alias to edit & update git repo from any folder:
 1. Create an alias for easy management.
 2. Hide untracked files using newly created alias.
 3. Avoid weird git recursion problems by ignoring dotfiles folder.
@@ -28,47 +26,41 @@ cfg config --local status.showUntrackedFiles no
 echo ".cfg" >> ~/.gitignore
 cfg checkout
 ```
-
-## Additional Resources
+---
+# Additional Resources
 
 ### Vim++
 Colorscheme: [One Dark](https://github.com/joshdick/onedark.vim)
 
-If `vim :version` == 'Small version without GUI'
+Check if `vim :version` == 'Small version without GUI' and update if needed
 ```
 apt-get install vim-gui-common
 apt-get install vim-runtime
-
-apt-get install vim-gnome
 ```
-### ZSH
 
-https://github.com/ohmyzsh/ohmyzsh#basic-installation
+### SUDO LECTURE BUDDIES
+#### Custom messages for /etc/sudoers.d/sudoers.lecture
 
-### Windows X Server
-Some GUI applications will not work on WSL without an X-Server.
-
-[vcXsrv](https://sourceforge.net/projects/vcxsrv/)
-
-### SUDO
-
-- ASCII Sudowoodo for /etc/sudoers.d/sudoers.lecture
-
-[SUDOwoodo](https://github.com/0aax/sudowoodo)
-
--ASCII groot
+ASCII [SUDOwoodo](https://github.com/0aax/sudowoodo):
 ```
-curl -O https://caferock.org/chris/groot.txt groot
+curl https://raw.githubusercontent.com/0aax/sudowoodo/colour/sudowoodo.lecture -o sudowoodo
+sudo cp groot.txt /etc/sudoers.d/sudoers.lecture
+```
+ASCII groot
+```
+curl https://caferock.org/chris/groot.txt -o groot
 sudo cp groot.txt /etc/sudoers.d/sudoers.lecture
 ```
 
+### Windows X Server
+[vcXsrv](https://sourceforge.net/projects/vcxsrv/): Some GUI applications will not work on WSL without an X-Server.
+
 ### PEDA for GDB
-Python Exploit Development Assistance for GDB. Enhance GDG GUI for ez debugging and exploit development.
+[PEDA](https://github.com/longld/peda): Python Exploit Development Assistance for GDB. Enhance GDG GUI for ez debugging and exploit development.
 
-[PEDA](https://github.com/longld/peda)
+### ZSH
+[ZSH Installation](https://github.com/ohmyzsh/ohmyzsh#basic-installation)
 
-### rockyou.txt
-Common words dictionary useful for password cracking
-
-[Download](https://github.com/brannondorsey/naive-hashcat/releases/download/data/rockyou.txt)
+### rockyou.txt for pwds
+[Download](https://github.com/brannondorsey/naive-hashcat/releases/download/data/rockyou.txt): Common words dictionary useful for password cracking
 
