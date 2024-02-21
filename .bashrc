@@ -35,14 +35,13 @@ export ASCII="$HOME/ascii"
 export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
 export GO="/usr/local/go/bin:/$HOME/go/bin"
 export VBOX="/mnt/c/Programs\ Files/Oracle/VirtualBox"
-export LOCALBIN="$HOME/.local/bin"
+export USRBIN="$HOME/bin"
+export USRLOCALBIN="$HOME/.local/bin"
 
-for DIRPATH in $THEOS $CARGO $ASCII $JAVA_HOME $GO $VBOX $LOCALBIN
-do	
-	if [ -d "$DIRPATH" ] ; then 
-		export PATH="$PATH:$DIRPATH"
-		echo "Added" $DIRPATH
-	fi
+# CHECK PATH EXISTENCE
+for DIRPATH in $THEOS $CARGO $ASCII $JAVA_HOME $GO $VBOX $USRBIN $LOCALBIN 
+do 
+	if [ -d "$DIRPATH" ] ; then export PATH="$PATH:$DIRPATH"; fi
 done	
 
 # WSL DISPLAY CONFIGURATION
@@ -51,11 +50,11 @@ export LIBGL_ALWAYS_INDIRECT=1
 export TERM=xterm-256color
 # export DISPLAY=$WSL_HOST:0.0
 
-# CONFIGURATION
-export RABBITMQ_NODENAME=rabbit@localhost
-export VAGRANT_WSL_ENABLE_WINDOWS_ACCESS="1"
-export VAGRANT_WSL_WINDOWS_ACCESS_USER_HOME_PATH="$WSL_HOST/Users/Administrator/Desktop/zulip"
-export GO111MODULE=on
+# BLUE MOON CONFIGURATION
+# export RABBITMQ_NODENAME=rabbit@localhost
+# export VAGRANT_WSL_ENABLE_WINDOWS_ACCESS="1"
+# export VAGRANT_WSL_WINDOWS_ACCESS_USER_HOME_PATH="$WSL_HOST/Users/Administrator/Desktop/zulip"
+# export GO111MODULE=on
 
 # USER PROMPT
 BOLD="\[$(tput bold)\]"
@@ -69,6 +68,5 @@ PS1="$BOLD$BLU$DIR$UNBOLD$NONE"
 
 if [ -f $HOME/.git_completion ]; then
 	BRANCH="\$(__git_branch)"
-	#DIRTY="\$(__git_dirty)"
 	PS1="$YEL$BRANCH"$PS1
 fi

@@ -2,33 +2,17 @@
 ### BASH FUNCTIONS ###
 ######################
 
-# Quickly append alias
-qa () {
-	echo "alias $1='$2'" >> ~/.bash_aliases
-}
-
 # rsync all files in current directory to CAEN
-cr () {
+caenrsync () {
 	DIR=$1
 	rsync -rtv --exclude '.git*' --exclude '.vs*' --exclude 'Debug*' ./ cestrell@login.engin.umich.edu:"$DIR"
-}
+} # caenrsync
 
 # Control git directories from anywhere
 git-dir () {
     DIR=$1
 	git --git-dir="$DIR/.git" --work-tree="$DIR" "$@"
-}
-
-# Quickly jump folders on desktop
-p () {
-	home && cd $1
-}
-
-# For use with .git_completion
-# __git_dirty () {
-#   git diff --quiet HEAD &>/dev/null
-#   [ $? == 1 ] && echo "!"
-# }
+} # git-dir
 
 # For use with .git_completion
 __git_branch () {
@@ -60,6 +44,4 @@ set_SSH_agent () {
     unset env
 
     echo "Successfully configured SSH Agent."
-}
-
-# set_SSH_agent
+} # set_SSH_agent
