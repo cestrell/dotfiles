@@ -17,8 +17,8 @@
 	symlinks = true
 	#excludesfile = ~/.gitignore_global
 
-# Um
 [credential]
+helper = cache
 
 [github]
 	user = cestrell
@@ -29,14 +29,16 @@
 [alias]
 	a = add
 	b = branch
-	bs = git symbolic-ref --short HEAD
+	bs = symbolic-ref --short HEAD # Branch short
 	c = commit
 	cm = commit -m
 	d = diff
 	ps = push
 	pl = pull
 	psuo = push -u origin
-	r = rebase
 	s = status
 	st = stash
 	clog = log --all --decorate --oneline --graph
+	parent = rev-parse --abbrev-ref --symbolic-full-name @{u}
+	last = log -1 HEAD
+	unstage = reset HEAD --

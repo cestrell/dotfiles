@@ -15,3 +15,7 @@
 .npm/*
 .mozilla/*
 src/*
+go/*
+.gem/*
+.android/*
+.config/*
