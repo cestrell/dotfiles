@@ -2,7 +2,7 @@
 """ VIMRC""""
 """""""""""""
 
-colorscheme industry			" Set colorscheme
+colorscheme onedark				" Set colorscheme
 syntax on						" Enable syntax highlighting
 
 set nocompatible				" Required (?)
@@ -28,6 +28,7 @@ set shiftwidth=4 noexpandtab	" More tab styling
 set undofile					" Maintain undo history between sessions
 set undodir=~/.vim/undo			" Set undo file directory
 set visualbell noerrorbells		" No annoying dings
+set t_vb=						" Disable visual bell
 set wildmode=longest,list,full	" Lazy file name tab completion
 set wildmenu					" Visual autocomplete for command menu
 set wildignorecase				" Case insensitive command menu
